@@ -1,0 +1,1 @@
+Sunspot.config.solr.url = "http://index.websolr.com/solr/ac626c90bdd"
