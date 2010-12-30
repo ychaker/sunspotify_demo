@@ -11,7 +11,23 @@
 <body>
 
 <header>
-	<%= link_to "Users", users_path %> | <%= link_to "Posts", posts_path %> | <%= link_to "Search", search_path %> | <%= link_to "Search Admin", admin_search_path %> | 
+	<p>
+		<%= link_to "Users", users_path %> | 
+		<%= link_to "Posts", posts_path %> | 
+		<%= link_to "Search", search_path %> | 
+		<%= link_to "Search Admin", admin_search_path %> | 
+	</p>
+	<p>
+		Instructions: 
+		<ul>
+			<li>Use the navigation above to create/edit user and post entries.</li>
+			<li>Use the panel below to customize and configure your search index.</li>
+			<li>Use search link above to access the search page and test the searching functionality.</li>
+		</ul>
+	</p>
+	<p>
+		PS: Since the Solr instance is hosted on WebSolr, powering on/off Solr capabilities are limited so the power button will not work and also some of the sounds and effects.
+	</p> 
 </header>
 
 <%= content_for?(:content) ? yield(:content) : yield %>
